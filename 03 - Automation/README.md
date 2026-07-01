@@ -1,8 +1,7 @@
 
 # EPICODE Cybersecurity & Ethical Hacking Journey
 
-## 02 - NETWORKING
+## 03 - Automation & Scripting
 
-- 01 - Analisi IPv4
 - 0X - WIP
 
