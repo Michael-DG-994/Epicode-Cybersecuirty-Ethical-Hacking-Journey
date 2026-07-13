@@ -1,8 +1,8 @@
 
 # EPICODE Cybersecurity & Ethical Hacking Journey
 
-## 02 - NETWORKING
+## 05 - Red Team
 
-- 01 - Analisi IPv4
-- 0X - WIP
+- 01 - Automated phishing campaign with AI
+
 
