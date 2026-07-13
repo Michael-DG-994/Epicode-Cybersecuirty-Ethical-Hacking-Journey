@@ -6,12 +6,12 @@ Più informazioni su  requisiti e funzionamento su requirements.txt allegato con
 ## Il tool TracerTNG è strettamente per automazione di operazioni di OSINT riguardanati l'ambito del penetration testing ed è da usare esclusivamente con permissione esplicità di tutte le parti.
 
 ## Tool utilizzati (spesso inclusi con kali):
-- 1) nslookup
-- 2) whois
-- 3) sublist3r
-- 4) subfinder
-- 5) theHarvester
-- 6) recon-ng
+- nslookup
+- whois
+- sublist3r
+- subfinder
+- theHarvester
+- recon-ng
 
 ## API utilizzate (opzionali):
 - Gemini API con seguente formato: GEMINI_API_KEY=your_gemini_key
