@@ -1,5 +1,6 @@
 
 # EPICODE Cybersecurity & Ethical Hacking Journey
+W.I.P. Readme - la tabella sarà aggiunta a breve 
 
 ## 05 - Red Team
 
