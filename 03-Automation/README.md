@@ -14,3 +14,6 @@
 | [06](./06-python-socket-script/)|**Script per trovare socket in ascolto**|Bare-bones script per trovare socket in ascolto|
 | [07](./07-python-venv-gemini-genai/)|**Virtual Enviroment & Integrazione gemini genai**|Virtual Enviroment setup & gemini genai API|
 | [08](./08-python-perimetro-area-forme/)|**Calcolatore perimetro e area forme**|Script python per calcolare perimetro e area di forme con parametri inseriti da utente|
+| [09](./09-OSINT-Tool-Autoscan/)|**TracerTNG-WIP**|Script per Scan automatico tool OSINT di KALI|
+| [10](./10-AI-Prompt-Injection-Regex/)|**Prompt Injection Guard**|Script che utilizza Regex pattern recognition e normalizzazione input per evitare Prompt Injection|
+| [11](./11-LazyNmap-Script/)|**Script Nmap basico**|Semplice script che rende autonomi scan di Nmap|
