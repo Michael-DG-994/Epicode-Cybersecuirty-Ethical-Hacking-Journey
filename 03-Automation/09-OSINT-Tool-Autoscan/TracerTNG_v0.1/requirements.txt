@@ -1,0 +1,62 @@
+#===============================================================
+#                                                            #
+#  ╔══════════════════════════════════════════════════════╗  #
+#  ║     TracerTNG  - MIKE DG  -  Kali Linux Edition      ║  #
+#  ║              Educational OSINT script                ║  #
+#  ╚══════════════════════════════════════════════════════╝  #
+#                                                            #
+#==============================================================
+#
+#WHAT IS THIS?
+#-------------
+#Educational tool for my cybersec course, script that utilizes a lot
+#OSINT tools prepackaged with Kali to run a passive recon
+#but also includes SHODAN's API and a GEMINI ai report
+#
+#HOW TO INSTAL?
+#--------------
+#On Kali Linux (or any machine with pip):
+#pip install -r TracerTNGrequirements.txt
+#
+#WHAT SYSTEM TOOLS ARE USE?
+#--------------------------
+#These are pre-installed with Kali so if you run the script on it, good,
+#othewise installing them is required.
+# 1) nslookup
+# 2) whois
+# 3) sublist3r
+# 4) subfinder
+# 5) theHarvester
+# 6) recon-ng
+#
+#API KEYS
+#--------
+#It's necessary to set up your API keys to use shodan and gemini
+# create .env in program's folder
+# USE THIS TEMPLATE:
+# SHODAN_API_KEY=your_shodan_key
+# GEMINI_API_KEY=your_gemini_key
+#
+#RECON-NG MODULES
+#----------------
+#you need to install the modules used for recon-ng
+#which are: hackertarget, certificate_transparency and google_site_web
+#just run:
+#recon-ng
+#marketplace install recon/domains-hosts/hackertarget
+#marketplace install recon/domains-hosts/certificate_transparenc
+#marketplace install recon/domains-hosts/google_site_web
+#
+##WHY DOES IT SUCK?
+#-----------------
+#I'm not a programmer, i'm an idiot
+#
+#HERE ARE THE DEPENDENCIES:
+
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+dnspython>=2.4.0
+shodan>=1.31.0
+google-genai>=1.0.0
+colorama>=0.4.6
+googlesearch-python>=1.2.3
