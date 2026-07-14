@@ -1,0 +1,50 @@
+Firewall ASA routing: BROKEN ROUTING
+
+Firewall hardware si pone tra router di edge (verso l'esterno), server Web application e LAN interna.
+
+E' necessario impostare i security level verso l'interno a 100, verso i web server a 50 e verso l'esterno
+si può lasciare a 0. 
+
+Il problema adesso è permettere routing tra LAN interna e web server e tra router edge e web server.
+
+Per fare ciò è necessario già ideare quale saranno gli ip-zona 
+
+WAN (ISP<->Router): assegnato da ISP
+DMZ (Router<->Firewall->Web Server)
+LAN interna: suddivisa in VLAN per piano e collegata a NAS, ip risolti tramite DHCP service in NAS
+
+da router devo configurare interfacce:
+interfaccia verso router: 
+ip address: ip publico/subnetmask
+
+interfaccia lan verso firewall
+ip address: [ip LAN]/24
+
+default route 0.0.0.0 0.0.0.0 [gateway della wan dato da ISP]
+
+
+il router ora ha bisogno di definire interfaccia ESTERNA e INTERNA tramite access-list
+
+[WORK IN PROGRESS]
+
+
+Su firewall ora ho bisogno di configurare interfacce
+verso router: outside - security level 0
+verso multiswitch: inside - security level 100
+verso web server: dmz - security level 50
+
+poi di routing default: route outside 0.0.0.0 0.0.0.0 [gateway lan]
+
+definire regole NAT
+
+[WORK IN PROGRESS]
+
+access control list
+
+[WORK IN PROGRESS]
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+Come abbiamo fatto a configurare il firewall perimetrale per questa topologia network:
+
+Ho configurato su firewall 3 interfacce corrispondenti alle idee di segmentazione già esposte:
+interfaccia verso edge router "outside" con un livello di sicurezza minimo.
+interfaccia verso dmz (zona demilitarizzata ovvero il web application server) "dmz" con livello di sicurezza intermedio.
+e interfaccia verso LAN interna "inside" con livello di sicurezza massimo
+
+Ho infine determinato il routing tra i vari segmenti specificando route outbound verso edge router, e configurando le NAT
+
+1 Nat statica per il web server dmz che assegna al web server un IP statico per traffico verso fuori.
+1 PAT dinamica per la LAN interna così che i dispositivi della LAN usino tutti un solo IP pubblico 
+
+Serve ora gestire le regole e policy del firewall, quali tipi di pacchetto possono effettivamente passare tra segmenti diversi.
+
+OUTSIDE_IN da internet verso dmz, permette TCP/HTTP/HTTPS verso server web application il resto è bloccato
+DMZ_IN da web server verso LAN, permette icmp e tcp generico, http/https e DNS in uscita MA impedisce la creazione di connessioni verso LAN nel caso web server venga compromesso
+e INSIDE_IN nonostante non strettamente necessario concede tutti i tipi di traffico da LAN verso ambienti meno sicuri
+E li applico alle loro interfacce corrispondenti.
+
+Per evitare che i pacchetti però vengano bloccati da firewall devo esprimere le policy per i 2 tipi di pacchetti che interessano il nostro traffico.
+Creo la classe inspection_default per identificare il traffico da ispezionare, creo una policy globale che dice al firewall di ispezionare http e icmp prima di permetteren il traffico.
+E infine applico la policy globalmente

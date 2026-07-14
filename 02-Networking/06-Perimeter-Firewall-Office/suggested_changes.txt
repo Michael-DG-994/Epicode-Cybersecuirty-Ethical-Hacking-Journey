@@ -1,0 +1,20 @@
+Implementazioni che potrebbero aiutare con la sicurezza:
+
+- Redundancy system:
+        1) Firewall Failsafe: un secondo ASA collegato con link failover sulla stessa rack dell'ASA firewall permitrale già settato
+        2) Switch STP (spanning tree protocol) per prevenere loop
+        3) Reduntant uplink cablatura tra switches verso switch core (multilayer switch)
+        4) DHCP redundancy: secondo server o secondo scope in failsafe
+        5) RAID per NAS: evitare che i fallimento di un disco paralizzi l'archivio interno (non strettamente redundancy ma tiene operativo il sistema in caso di problemi con storage)
+        6) seconda DNS interna, anche leggera
+        7) UPS
+        8) ISP redundancy: secondo internet service provider
+
+- SEGMENTAZIONE PER DNS INTERNA : PC compromesso potrebbe accedere alla DNS interna direttamente il che sarebbe un grande rischio.
+
+- Installazione di moduli di sicurezza e acquisti license per applicare IPS/IDS e altri servizi avanzati sui dispositivi network più importanti (esempio: FirePOWER su ASA x threat detection, IOS v15+ per securityk9 su switches)
+
+- Rate limiting su edge router
+
+- VLAN management x sysadmin per monitorare network che sia quindi isolato da possibili attacchi rispetto ad un PC lan qualsiasi
+

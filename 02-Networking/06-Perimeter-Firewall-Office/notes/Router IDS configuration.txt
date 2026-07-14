@@ -1,0 +1,23 @@
+{Router: 2911; interfaccia collegata a internet (direzione DMZ- Demilitarized zone) Gigabit0/0 via cavo seriale,
+modulo necessario per connessione cavo seriale DCE: HWIC-2T} [[[ASSICURATI IPS SIA CONFIGURATA]]]
+
+enable !servono permessi
+#configure terminal
+
+(config)#ip ips name MY_IDS !creo regola IDS e la chiamo MY_IDS
+(config)#ip ips notify log !sdee non supportato sulla versione packet tracer quindi utilizzo log
+!manda comunque alerts al syslog/console
+(config)#interface GigabitEthernet0/0 !vado a configurare su interfaccia rivolta a DMZ
+(config-if)#ip ips MY_IDS in !attivo regola su interfaccia
+(config-if)#exit
+(config)#exit
+
+#show ip ips all
+#show ip ips configuration !controllo se sono stati configurati
+!IPS Syslog and SDEE Notification Status
+Event notification through syslog is enabled
+Event notification through SDEE is enabled!
+
+#configure terminal !serve per andare a vedere se i comandi sono attivi
+(config)#ip ips notify ?
+!se mostra:  log  Send events as syslog messages allora è attivo!

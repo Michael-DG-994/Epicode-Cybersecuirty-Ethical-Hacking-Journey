@@ -1,0 +1,46 @@
+{Router: 2911; interfaccia collegata a internet (direzione DMZ- Demilitarized zone) Gigabit0/0 via cavo seriale,
+modulo necessario per connessione cavo seriale DCE: HWIC-2T}
+
+enable !privilegi sysadmin
+#show version !serve versione IOS 15.xx minimo
+#show license feature !controllo se feature securityk9 è attivo
+
+
+
+enable !necessito nuovamente permessi
+
+#configure terminal
+(config)#crypto key generate rsa !genero crypto key necessaria per utilizzare securityk9
+(config)#exit
+
+#license boot module c2900 technology-package securityk9 !attivo securityk9
+#reload !riavvio router dopo aver accettato
+
+#mkdir flash:ips !creo directory IPS su flash
+#configure terminal
+(config)#ip ips config location flash:ips !configuro location dell'IPS
+(config)#ip ips name IOSIPS !creo regola IPS e la chiamo IOSIPS
+
+!ora necessario caricare le categorie signatures
+(config)#ip ips signature-category
+(config-ips-category)#category all !interessate tutte le categorie
+(config-ips-category-action)#retired true
+(config-ips-category-action)#exit
+(config-ips-category)#category ios_ips basic
+(config-ips-category-action)#retired false
+(config-ips-category-action)#exit
+(config-ips-category)#exit
+
+(config)#interface GigabitEthernet0/0
+(config-if)#ip ips IOSIPS in !applico regola IPS a interfaccia non sicura connessa a internet
+(config-if)#exit
+(config)#exit
+#write memory !salvo modifiche
+
+enable !ho bisogno di permessi per comandi di verifica
+#show ip ips all
+#show ip ips interfaces !controllo se ips è attivo su interfaccia
+
+
+
+
