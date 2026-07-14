@@ -17,3 +17,4 @@
 | [09](./09-OSINT-Tool-Autoscan/)|**TracerTNG-WIP**|Script per Scan automatico tool OSINT di KALI|
 | [10](./10-AI-Prompt-Injection-Regex/)|**Prompt Injection Guard**|Script che utilizza Regex pattern recognition e normalizzazione input per evitare Prompt Injection|
 | [11](./11-LazyNmap-Script/)|**Script Nmap basico**|Semplice script che rende autonomi scan di Nmap|
+| [12](./12-Analisi-Codice/)|**Analisi Codice Python**|Analisi di codice python a prima vista|
