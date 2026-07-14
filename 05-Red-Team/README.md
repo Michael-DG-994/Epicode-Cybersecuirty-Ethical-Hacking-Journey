@@ -4,7 +4,10 @@ W.I.P. Readme - la tabella sarà aggiunta a breve
 
 ## 05 - Red Team
 
-- 01 - Automated phishing campaign with AI
-- 02 - UDP Flooder
+## Struttura
+| # | Campo | Focus |
+|---|--------|-------|
+| [01](./01-AIDriven-Phishing-Campaign/)|**AI Automated Phishing Campaignt**|Script che a partire da url/email genera mail di phishing mirata tramite AI con API Gophish|
+| [02](./02-UDP-Flooder/)|**UDP Flooder**|Semplice script UDP Flooder|
 
 
