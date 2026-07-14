@@ -1,7 +1,7 @@
 
-# EPICODE Cybersecurity & Ethical Hacking Journey (W.I.P.)
+# Cybersecurity & Ethical Hacking Journey (W.I.P.)
 
-Un record delle mie esperienze di crescita personale nel campo della cybersecurity durante il mio percorso con **EPICODE Institute of Technology**. Ogni progetto ed esercizio svolto con EPICODE e fornito di report e spiegazione step-by-step dello svolgimento.
+Un record delle mie esperienze di crescita personale nel campo della cybersecurity durante il mio percorso. Ogni progetto ed esercizio svolto è fornito di report e spiegazione step-by-step dello svolgimento.
 
 ---
 
@@ -72,7 +72,7 @@ Ogni directory contiene progetti individuali, ciascuno dotato di README con info
 
 ### 05 - Red Team
 - Automated phishing campaign with AI
-- DVWA file inclusion/upload & Hash cracking
+- DVWA local file inclusion, RCE & Hash cracking
 - Vulnhub Bsides Vancouver 2018 CTF
 - Dictionary Crack
 - HackTheBox
