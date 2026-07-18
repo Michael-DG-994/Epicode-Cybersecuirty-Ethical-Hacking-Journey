@@ -18,3 +18,4 @@
 | [10](./10-AI-Prompt-Injection-Regex/)|**Prompt Injection Guard**|Script che utilizza Regex pattern recognition e normalizzazione input per evitare Prompt Injection|
 | [11](./11-LazyNmap-Script/)|**Script Nmap basico**|Semplice script che rende autonomi scan di Nmap|
 | [12](./12-Analisi-Codice/)|**Analisi Codice Python**|Analisi di codice python a prima vista|
+| [13](./13-Powershell-vs-CMD/)|**Differenze tra CMD e Powershell|Differenze tra CMD.exe e Powershell e scripting con i comandlets di PS|
