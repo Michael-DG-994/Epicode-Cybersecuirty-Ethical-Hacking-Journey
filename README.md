@@ -52,7 +52,6 @@ Ogni directory contiene progetti individuali, ciascuno dotato di README con info
 - OSINT tools automation script Python
 - Prompt injection protection & basic regex
 - Basic Nmap scan automation & Report
-- UDP flooding
 - Powershell automation & scriping VS. Microsoft cmd.exe
 
 ### 04 - Blue Team
@@ -72,7 +71,8 @@ Ogni directory contiene progetti individuali, ciascuno dotato di README con info
 
 ### 05 - Red Team
 - Automated phishing campaign with AI
-- DVWA local file inclusion, RCE & Hash cracking
+- UDP flooding
+- DVWA local LFI & RCE
 - Dictionary Crack
 - HackTheBox
 - OSCP Overflow1 & Overflow2
