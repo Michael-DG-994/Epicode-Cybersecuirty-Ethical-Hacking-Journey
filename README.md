@@ -35,7 +35,7 @@ Ogni directory contiene progetti individuali, ciascuno dotato di README con info
 - Packet Tracer configurazione DHCP server
 - PFSense firewall policy configuration
 - Configurazione Perimeter Firewall e segmentazione di un ufficio
-- Nmap
+- Nmap: Network Mapper
 
 ### 03 - Automation & Scripting
 - Basic C calcolatore media
