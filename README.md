@@ -13,7 +13,6 @@ Un record delle mie esperienze di crescita personale nel campo della cybersecuri
 | [03](./03-Automation/)|**Automazione e Scripting**|Cisco Packet Tracer, Socket, Scanning, Firewall Setup|
 | [04](./04-Blue-Team/)|**Blue Team**|SIEM, Packet Analysis, Malware Analysis, Security Logs|
 | [05](./05-Red-Team/)|**Red Team**|Kali tools, Spear Phishing, CTFs, Metasploit, HackTheBox|
-||||
 
 Ogni directory contiene progetti individuali, ciascuno dotato di README con informazioni su data e unità relativa all'esercizio. Inoltre ogni progetto contiene un report in formato pdf che lo espone completamente.
 
@@ -36,6 +35,7 @@ Ogni directory contiene progetti individuali, ciascuno dotato di README con info
 - Packet Tracer configurazione DHCP server
 - PFSense firewall policy configuration
 - Configurazione Perimeter Firewall e segmentazione di un ufficio
+- Nmap
 
 ### 03 - Automation & Scripting
 - Basic C calcolatore media
