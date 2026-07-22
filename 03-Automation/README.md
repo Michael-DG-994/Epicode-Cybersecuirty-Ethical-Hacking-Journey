@@ -1,7 +1,7 @@
 
 # EPICODE Cybersecurity & Ethical Hacking Journey
 
-## 02 - NETWORKING
+## 03 - AUTOMAZIONE E SCRIPTING
 
 ## Struttura
 | # | Campo | Focus |
